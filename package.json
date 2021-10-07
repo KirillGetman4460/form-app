@@ -2,6 +2,7 @@
   "name": "form-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://kirillgetman4460.github.io/form-app",
   "dependencies": {
     "@hookform/error-message": "^2.0.0",
     "@hookform/resolvers": "^2.8.1",
@@ -9,6 +10,7 @@
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "axios": "^0.22.0",
+    "gh-pages": "^3.2.3",
     "json-server": "^0.16.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -23,10 +25,12 @@
     "yup": "^0.32.9"
   },
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject"   
   },
   "eslintConfig": {
     "extends": [
