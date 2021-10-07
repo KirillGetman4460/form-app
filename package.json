@@ -2,7 +2,7 @@
   "name": "form-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://kirillgetman4460.github.io/form-app",
+  "homepage": "https://kirillgetman4460.github.io/form-app/",
   "dependencies": {
     "@hookform/error-message": "^2.0.0",
     "@hookform/resolvers": "^2.8.1",
