@@ -19,6 +19,7 @@ const Login = ()=>{
                 setErrorMessage(false)
                 dispatch({type:"active_user",payload:true})
                 history.push('/user')
+                history.go(0)
                 return;
             }
             dispatch({type:"active_user",payload:false})    
@@ -51,7 +52,7 @@ const Login = ()=>{
 
                 <label className="login__password__label">
                     <input {...register("password", { 
-                        minLength:8,
+                        minLength:6,
                         required: true                
                     })} placeholder="Password" 
                         type="password"

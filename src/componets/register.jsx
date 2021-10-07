@@ -47,7 +47,7 @@ const Register = ()=>{
 
                 <label className="login__password__label">
                     <input {...register("password", { 
-                        minLength:8,
+                        minLength:6,
                         required: true                    
                     })}     
         
@@ -60,7 +60,7 @@ const Register = ()=>{
                 </label>  
                 <label className="login__repeat__label">
                     <input {...register("confirmPassword", { 
-                        minLength:8,
+                        minLength:6,
                         required: true,
                         validate: value=>{
                             value === passwordTest ? setPasswordRepeat(false):setPasswordRepeat(true)
